@@ -1,2 +1,35 @@
 .page-home {
+  .intro.hero {
+    height: 100vh;
+    box-shadow: 0 3000px rgba(0, 0, 0, 0.5) inset;
+
+    h1,
+    p {
+      color: white;
+    }
+
+    &.y-top {
+      background-position-y: top;
+    }
+
+    &.y-center {
+      background-position-y: center;
+    }
+
+    &.y-bottom {
+      background-position-y: bottom;
+    }
+
+    &.x-left {
+      background-position-x: left;
+    }
+
+    &.x-center {
+      background-position-x: center;
+    }
+
+    &.x-right {
+      background-position-x: right;
+    }
+  }
 }

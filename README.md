@@ -198,6 +198,21 @@ While this themes default content uses illustrations, its easy to change the ima
 
 the front-matter field `intro_image_absolute: true` let's illustrations "break out" (in CSS terms, it uses `position: absolute`) of the grid and is an intended stylistic effect. When using photos or normal images it's recommended to set this field to false and the photo will align with the grid. See `content/team/_index.md` for an example.
 
+### Hero Image
+
+The homepage can have a Hero image. To activate it, just uncomment the `heroImage` field in the `content/_index.md` frontmatter.
+
+```yml
+# content/_index.md
+---
+# heroImage: images/illustrations/pointing.svg
+# heroImagePositionX: right
+# heroImagePositionY: top
+---
+```
+
+You will get a tinted image using the whole screen. Use `heroImagePositionX` and `heroImagePositionY` to position the image.
+
 ### Google Analytics
 
 Put your Google Analytics ID in the `google_analytics_id` field in the `config.toml` - Also supports Google Tag Manager. When your site is running locally using `hugo server` the GA tag is not injected. This prevents polluting your real data.
